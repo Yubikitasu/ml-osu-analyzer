@@ -2,7 +2,7 @@ import rosu_pp_py as rosu
 import numpy as np
 import matplotlib.pyplot as plt
 
-from classes.ExternalCalculator import ExternalCalculator
+from OsuAnalyzer.ExternalCalculator import ExternalCalculator
 
 class BeatmapAnalyze:
     """

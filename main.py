@@ -1,4 +1,4 @@
-from classes.OsuSkillPipeline import OsuSkillPipeline
+from OsuAnalyzer.OsuSkillPipeline import OsuSkillPipeline
 
 # Example usage:
 if __name__ == "__main__":

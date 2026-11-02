@@ -18,7 +18,7 @@ An osu! beatmap analysis and player-skill prediction project. It analyzes beatma
 | Path | Description |
 | --- | --- |
 | [`main.py`](./main.py) | Example pipeline entry point |
-| [`classes/`](./classes/) | Beatmap collection, analysis, dataset, and model classes |
+| [`OsuAnalyzer/`](./OsuAnalyzer/) | Beatmap collection, analysis, dataset, and model classes |
 | [`beatmaps/`](./beatmaps/) | Cached beatmap files used for analysis |
 | [`analyze.ipynb`](./analyze.ipynb) | Interactive analysis notebook |
 | [`requirements.txt`](./requirements.txt) | Python dependencies |
@@ -56,7 +56,7 @@ python main.py
 To use another player, edit `player` in [`main.py`](./main.py):
 
 ```python
-from classes.OsuSkillPipeline import OsuSkillPipeline
+from OsuAnalyzer.OsuSkillPipeline import OsuSkillPipeline
 
 pipeline = OsuSkillPipeline()
 player = "YourOsuUsername"
@@ -101,6 +101,6 @@ The cached data and model files are local artifacts. Re-running collection may u
 
 ## Notes
 
-- The project uses external API mirrors configured in [`BeatmapCollect.py`](./classes/BeatmapCollect.py) and [`TopPlayDataset.py`](./classes/TopPlayDataset.py).
+- The project uses external API mirrors configured in [`BeatmapCollect.py`](./OsuAnalyzer/BeatmapCollect.py) and [`TopPlayDataset.py`](./OsuAnalyzer/TopPlayDataset.py).
 - Predictions are estimates based on the training data and should not be treated as official osu! performance calculations.
 - A new player's dataset should be collected and used to train models before making predictions for that player.

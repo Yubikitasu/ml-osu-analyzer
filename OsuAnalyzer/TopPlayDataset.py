@@ -3,8 +3,8 @@ import os
 
 import requests
 
-from classes.BeatmapCollect import BeatmapCollect
-from classes.BeatmapAnalyze import ScoreAnalyze
+from OsuAnalyzer.BeatmapCollect import BeatmapCollect
+from OsuAnalyzer.BeatmapAnalyze import ScoreAnalyze
 
 from tqdm import tqdm
 

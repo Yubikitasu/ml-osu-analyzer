@@ -3,11 +3,11 @@ import torch
 from torch.utils.data import DataLoader
 import os
 
-from classes.BeatmapAnalyze import BeatmapAnalyze
-from classes.OsuBasicPredictor import OsuBasicPredictor
-from classes.TopPlayDataset import TopPlayDataset
-from classes.OsuSkillDataset import OsuSkillDataset
-from classes.OsuSkillPredictor import OsuSkillPredictor
+from OsuAnalyzer.BeatmapAnalyze import BeatmapAnalyze
+from OsuAnalyzer.OsuBasicPredictor import OsuBasicPredictor
+from OsuAnalyzer.TopPlayDataset import TopPlayDataset
+from OsuAnalyzer.OsuSkillDataset import OsuSkillDataset
+from OsuAnalyzer.OsuSkillPredictor import OsuSkillPredictor
 
 class OsuSkillPipeline:
     def __init__(self, basic_model_path="osu_basic_predictor.pkl", nn_model_path="osu_skill_predictor.pth"):

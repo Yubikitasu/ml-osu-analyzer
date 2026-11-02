@@ -1,13 +1,13 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from classes.BeatmapAnalyze import BeatmapAnalyze
-from classes.BeatmapCollect import BeatmapCollect
 import os
 import numpy as np
 
-from classes.EarlyStopper import EarlyStopper
-from classes.OsuSkillDataset import UserSkillDataset
+from OsuAnalyzer.BeatmapAnalyze import BeatmapAnalyze
+from OsuAnalyzer.BeatmapCollect import BeatmapCollect
+from OsuAnalyzer.EarlyStopper import EarlyStopper
+from OsuAnalyzer.OsuSkillDataset import UserSkillDataset
 
 class OsuSkillPredictorModel(nn.Module):
     def __init__(self):

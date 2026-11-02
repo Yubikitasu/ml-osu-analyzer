@@ -1,11 +1,11 @@
-from classes.BeatmapAnalyze import BeatmapAnalyze
-from classes.BeatmapCollect import BeatmapCollect
+from OsuAnalyzer.BeatmapAnalyze import BeatmapAnalyze
+from OsuAnalyzer.BeatmapCollect import BeatmapCollect
 import os
 
 from sklearn.ensemble import IsolationForest
 import joblib
 
-from classes.OsuSkillDataset import UserSkillDataset
+from OsuAnalyzer.OsuSkillDataset import UserSkillDataset
 
 class OsuBasicPredictor:
     """
